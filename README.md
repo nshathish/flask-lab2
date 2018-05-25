@@ -43,8 +43,8 @@
   
     **_in flask_lab2.wsgi write the following_**
   
-    `import sys
-  `import logging`  
+    `import sys  
+        import logging`  
   `logging.basicConfig(stream=sys.stderr)`  
   `sys.path.insert(0, "/var/www/flask-lab2")`  
   
