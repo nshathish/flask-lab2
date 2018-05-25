@@ -80,6 +80,15 @@
       CustomLog ${APACHE_LOG_DIR}/access.log combined
   </VirtualHost>`
   
+7. disable the default site and enable flask-lab2
+
+  `sudo a2dissite 000-default.conf`  
+  `sudo a2ensite flask-lab2.conf`  
+  `sudo service apache2 reload`  
+  
+  
+  
+  
   
       
       
