@@ -85,3 +85,9 @@
     sudo a2ensite flask-lab2.conf
     sudo service apache2 reload
     ```
+
+9. **view your flask app in browser**
+
+    ```bash
+    http://<your_public_ip>
+    ```
