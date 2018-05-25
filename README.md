@@ -17,8 +17,26 @@
   
 4. create the flask app
 
-`cd /var/www`
-`git clone https://github.com/nshathish/flask-lab2.git`
-`cd flask-lab2`
+  `cd /var/www`
+
+  `git clone https://github.com/nshathish/flask-lab2.git`
+
+  `cd flask-lab2`
+
+4. setup virtual environment and install flask
+
+  `sudo apt-get install python-pip`
+  
+  `sudo pip install virtualenv`
+  
+  `sudo virtualenv venv`
+  
+  'source venv/bin/activate`
+  
+  `sudo pip install Flask`
+  
+  ** _try running the app_ **
+  
+  `sudo python app.py`
 
   
