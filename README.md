@@ -60,22 +60,26 @@
   
 6. configure and enable virtual host
 
-  `sudo nano /etc/apache2/sites-available/flask-lab2.conf`  
+  `sudo nano /etc/apache2/sites-available/flask-lab2.conf`
+  
   **_write the following in the flask-lab2.conf_**
-  `<VirtualHost *:80>`
-      `ServerName flask-lab2.myserver.com`
-      `ServerAdmin root@nshathish.com1`
-      `WSGIScriptAlias / /var/www/flask-lab2/flask-lab2.wsgi`
-      `WSGIDaemonProcess flask-lab2`
-      `<Directory /var/www/flask-lab2>`
-          `WSGIProcessGroup flask-lab2`
-          `WSGIApplicationGroup %{GLBAL}`
-          `Order deny,allow`
-          `Allow from all`
-      `</Directory>`
-      `ErrorLog ${APACHE_LOG_DIR}/error.log`
-      `LogLevel warn`
-      `CustomLog ${APACHE_LOG_DIR}/access.log combined`
+  
+  `<VirtualHost *:80>`  
+      `ServerName flask-lab2.myserver.com`  
+      `ServerAdmin root@nshathish.com1`  
+      `WSGIScriptAlias / /var/www/flask-lab2/flask-lab2.wsgi`  
+      `WSGIDaemonProcess flask-lab2`  
+      `<Directory /var/www/flask-lab2>`  
+          `WSGIProcessGroup flask-lab2`  
+          `WSGIApplicationGroup %{GLBAL}`  
+          `Order deny,allow`  
+          `Allow from all`  
+      `</Directory>`  
+      `ErrorLog ${APACHE_LOG_DIR}/error.log`  
+      `LogLevel warn`  
+      `CustomLog ${APACHE_LOG_DIR}/access.log combined`  
   `</VirtualHost>`
+  
+  
       
       
