@@ -9,3 +9,16 @@
   
   `sudo apt-get install apache2`
   
+3. install and enable mod_wsgi
+  
+  'sudo apt-get install libapache2-mog-wsgi python-dev`
+  
+  `sudo a2enmod wsgi`
+  
+4. create the flask app
+
+`cd /var/www`
+`git clone https://github.com/nshathish/flask-lab2.git`
+`cd flask-lab2`
+
+  
